@@ -1,6 +1,6 @@
 ## About
 Last Updated May 2019  
-Created by [Sarah Clayton](https://github.com/sclayton29), [Carolyn Mead-Harvey](https://github.com/carolyn-meadharvey), [Paul Vieth](https://github.com/crispzips), and [Connor Neale](https://github.com/ConnorJLN)
+Created by [Sarah Clayton](https://github.com/sclayton29), [Carolyn Mead-Harvey](https://github.com/carolyn-meadharvey), [Paul Vieth](https://github.com/crispzips), and updated by [Connor Neale](https://github.com/ConnorJLN)
 University of Oklahoma Libraries
 
 

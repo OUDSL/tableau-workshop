@@ -1,6 +1,6 @@
 ## About
-Last Updated Feburary 2017  
-Created by [Sarah Clayton](https://github.com/sclayton29), [Carolyn Mead-Harvey](https://github.com/carolyn-meadharvey), and [Paul Vieth](https://github.com/crispzips)  
+Last Updated May 2019  
+Created by [Sarah Clayton](https://github.com/sclayton29), [Carolyn Mead-Harvey](https://github.com/carolyn-meadharvey), [Paul Vieth](https://github.com/crispzips), and [Connor Neale](https://github.com/ConnorJLN)
 University of Oklahoma Libraries
 
 
@@ -125,7 +125,7 @@ Tableau allows you to perform basic statistical analysis. Let's add a trend line
 4. Click Show Me and Select the horizontal bar chart. This will combine all of your measures into one chart. Notice that your measures have moved to a new location. They are now in a new box called measure values on the left side of the screen below Marks. ![Fig_19: Measure Values Box](images/fig_19.png)
 5. For display purposes, we want to move the Measure Values to the x axis and number of crimes to the y axis. Tableau has a built in feature to easily accomplish this. Click the Swamp rows and columns button on the top toolbar. ![Fig_20: Swamp rows and columns button](images/fig_20.png)
 6. Notice there's something askew about the rape measure values. First, we have two different statistics for the total number of rapes committed in all states for all years of our dataset. Second, the "revised rape" measure value is so small as to be negligible on the scale of this bar graph. We don't want to visually (or in any way) minimize rape as a phenomenon. When we investigate these discrepancies, we learn that the FBI began using [a new definition of rape in 2013](https://ucr.fbi.gov/crime-in-the-u.s/2013/crime-in-the-u.s.-2013/violent-crime/rape). So, the two different measure values aren't depicting different crimes, but a change in definition of a crime, so we need to aggregate those two values to give a realistic portrait of violent sexual assault in the United States in proportion to measures of other violent crimes. 
-7. To do this, click the dropdown menu in the upper right hand corner of the "Measure Values" card. Click the first option, "New Calculation." ![Add Calculation to Measure Values](images/TableauBarchartImg01.png) We want to aggregate the sums of the two definitions of rape. This is as simple as adding "+" between "SUM(item_1)" and "SUM(item_2)". Tableau accepts the addition operator, but will not accept SUMs of SUMs. When you enter this calculation, Tableau will change the addition operator to an aggregation "AGG()", though this is not a selectable parameter in advance. ![FormulaLook](images/FigFormula.PNG)
+7. To do this, click the dropdown menu in the upper right hand corner of the "Measure Values" card. Click the first option, "New Calculation." ![Add Calculation to Measure Values](images/TableauBarchartImg01.png) We want to aggregate the sums of the two definitions of rape. This is as simple as adding "+" between "SUM(item_1)" and "SUM(item_2)". Tableau accepts the addition operator, but will not accept SUMs of SUMs. When you enter this calculation, Tableau will change the addition operator to an aggregation "AGG()", though this is not a selectable parameter in advance. ![FormulaLook](images/FigFormula.PNG) Note: Selecting a year before the updated definition of rape is recorded will give two null values in your bar graph.
 
 [Return to Top](#about)
 
@@ -171,16 +171,19 @@ Now we can create a dashboard to view all of our visualizations at once.
 20. Now, add an addition text for instructions. Double click on text under Objects in the bottom left corner. Enter your instructions. Make the box floating and bring to front. Then, position it where you would like. 
 21. You may also want to add an addition box to give yourself credit as the creator of this visualization. 
 
+
 [Return to Top](#about)
 
 ## Creating A Story Page
-1. Creating a story in Tableau allows you to combine you worksheets, dashboards, and text into presentation style pages, we'll create one here.
+1. Creating a story in Tableau allows you to combine you worksheets, dashboards, and text into presentation style pages.
 2. In the bottom bar of Tableau, where you created the worksheets and dashboards, click on New Story, and rename this new story Violent Crimes Presentation.
 3. Once on the story page, all of your worksheets and dashboards will be displayed on the right of the page, and a tab for the layout will be above those, and a section to add text, display the title, and change the size of the page will be in the bottom left. ![Fig Story:Top Section](images/FigStory1.PNG)
 4. Resize the page using the dropdown menu titled size, and select a page size that works for your display. 
 5. Drag your dashboard over to the empty story window, this allows you to present multiple dashboards or worksheets in a presentation style.
 6. Click on the Blank tab in the New Story Point section at the top left of the page.
 7. On this new tab drag one of your worksheets over. You may also change the individual titles of the story tabs by double-clicking on the Add a caption section of the story window.
+
+[Return to Top](#about)
 
 ## Sharing Your Visualizations
 1. We are going to walk through how to share your visualizations through Tableau Public. If you are using Tableau Desktop (this is what you have if you are using the academic trial), you will have more options.
